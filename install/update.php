@@ -32,7 +32,7 @@
                 echo "CREATE TABLE `tbl_payment_gateway` (
     `id` int(11) NOT NULL,
     `username` varchar(32) COLLATE utf8mb4_general_ci NOT NULL,
-    `gateway` varchar(32) COLLATE utf8mb4_general_ci NOT NULL COMMENT 'xendit | midtrans',
+    `gateway` varchar(32) COLLATE utf8mb4_general_ci NOT NULL COMMENT 'xendit | midtrans | uddoktapay',
     `gateway_trx_id` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
     `plan_id` int(11) NOT NULL,
     `plan_name` varchar(40) COLLATE utf8mb4_general_ci NOT NULL,
@@ -53,7 +53,7 @@
                         `tbl_payment_gateway` (
                             `id` int(11) NOT NULL,
                             `username` varchar(32) COLLATE utf8mb4_general_ci NOT NULL,
-                            `gateway` varchar(32) COLLATE utf8mb4_general_ci NOT NULL COMMENT 'xendit | midtrans',
+                            `gateway` varchar(32) COLLATE utf8mb4_general_ci NOT NULL COMMENT 'xendit | midtrans | uddoktapay',
                             `gateway_trx_id` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
                             `plan_id` int(11) NOT NULL,
                             `plan_name` varchar(40) COLLATE utf8mb4_general_ci NOT NULL,
